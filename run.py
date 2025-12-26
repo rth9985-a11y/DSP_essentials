@@ -24,7 +24,8 @@ if command == "FOLPF":
     lpf = lpfFO(fs, norm, fc)
     output = lpf.process(data)
 
-    # write to sound file
+    # Temp write function
+    sf.write("lowpassed.wav", output)
 
 if command == "FOHPF":
 
@@ -34,6 +35,7 @@ if command == "FOHPF":
     hpf = hpfFO(fs, norm, fc)
     output = hpf.process(data)
 
-    # write to sound file
+    # Temp write function
+    sf.write("hipassed.wav", output)
 
 

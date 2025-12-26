@@ -1,6 +1,6 @@
 import numpy as np
 import math
-import normalizer as norm
+from normalizer import norm
 
 class hpfFO:
     def __init__(self, fs, norm, fc):
