@@ -14,7 +14,7 @@ class lpfFO:
         output = np.zeros_like(data)
 
         for i in range(len(data)):
-            xn = norm.process(data[i])
+            xn = self.norm.process(data[i])
             yn = self.state + self.alpha * (xn - self.state)
             self.state = yn
             output[i] = yn
